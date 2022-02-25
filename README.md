@@ -12,6 +12,31 @@
 
 ## 使用方法
 
+
+### Windows 快速启动
+
+`Ctrl + R` 打开 `CMD`
+
+1. 随机产生一个子域名
+
+```
+cd windows_64
+./dingc
+```
+
+2. 指定一个子域名
+ 
+```
+cd windows_64
+dingc <subdomain>
+```
+#### 推荐设置为环境变量
+
+```
+setx PIERCED_HOME="add_path/pierced/"
+setx PATH=%PATH%;%PIERCED_HOME%
+```
+
 ### HTTP 穿透
 
 1. 下载工具
@@ -32,10 +57,10 @@
 
     Windows：
 
-    ```
-    cd windows_64
+    ``` cd windows_64
     ./ding -config ding.cfg -subdomain abcde 8080
     ```
+    
 
     启动后界面如下图所示：
 
